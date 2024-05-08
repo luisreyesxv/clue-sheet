@@ -60,6 +60,7 @@
   color: white;
   background-color: orange;
   isolation: isolate;
+  width: 100%;
 }
 
 /* #guess-table td select,
@@ -95,7 +96,7 @@
 
 @media only screen and (max-width: 767px) {
   /* Force table to not be like tables anymore */
-  #guess-table, 
+  #guess-table,
   #guess-table thead,
   #guess-table tbody,
   #guess-table th,
@@ -103,6 +104,12 @@
   #guess-table tr {
     display: block;
   }
+
+  #guess-table tr {
+    margin: 0 0 1rem;
+    border: 5px solid black;
+  }
+
   /* Hide table headers (but not display: none;, for accessibility) */
   #guess-table thead tr {
     position: absolute;
@@ -110,15 +117,14 @@
     left: -9999px;
   }
 
-  #guess-table tr {
-    margin: 0 0 1rem;
-    border: 5px solid black;
-  }
-    
-  #guess-table tr::nth-child(odd) {
+  #guess-table tr:nth-child(odd) {
     background: #ccc;
   }
-  
+
+  #guess-table select{
+    width: 100%;
+  }
+
   #guess-table td {
     /* Behave  like a "row" */
     border: none;
@@ -128,9 +134,7 @@
   }
 
   #guess-table td::before {
-    /* Now like a table header */
     position: absolute;
-    /* Top/left values mimic padding */
     top: 0;
     left: 6px;
     width: 45%;
@@ -140,13 +144,12 @@
 
   /*
   Label the data
-  You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
   */
-  #guess-table  td::nth-of-type(1)::before { content: "Guess"; }
-  #guess-table td::nth-of-type(2)::before { content: "Player"; }
-  #guess-table td::nth-of-type(3)::before { content: "Asked Whom?"; }
-  #guess-table td::nth-of-type(4)::before { content: "Hacker"; }
-  #guess-table  td::nth-of-type(5)::before { content: "Virus?"; }
-  #guess-table td::nth-of-type(6)::before { content: "Program"; }
-  #guess-table td::nth-of-type(7)::before { content: "Revealed"; }
+  #guess-table  td:nth-of-type(1)::before { content: "Guess"; }
+  #guess-table td:nth-of-type(2)::before { content: "Player"; }
+  #guess-table td:nth-of-type(3)::before { content: "Asked Whom?"; }
+  #guess-table td:nth-of-type(4)::before { content: "Hacker"; }
+  #guess-table  td:nth-of-type(5)::before { content: "Virus?"; }
+  #guess-table td:nth-of-type(6)::before { content: "Program"; }
+  #guess-table td:nth-of-type(7)::before { content: "Revealed"; }
 }

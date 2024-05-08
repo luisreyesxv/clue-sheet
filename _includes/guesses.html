@@ -2,72 +2,72 @@
 
 <table id="guess-table">
   <thead>
-  <tr>
-    <th> Guess </th>
-    <th> Player</th>
-    <th> Asked whom? </th>
-    <th class="hacker"> Hacker </th>
-    <th class="virus"> Virus </th>
-    <th class= "program"> Program </th>
-    <th> Revealed? </th>
-  </tr>
+    <tr>
+      <th> Guess </th>
+      <th> Player</th>
+      <th> Asked whom? </th>
+      <th class="hacker"> Hacker </th>
+      <th class="virus"> Virus </th>
+      <th class= "program"> Program </th>
+      <th> Revealed? </th>
+    </tr>
   </thead>
 
   <tbody>
-  {% for i in (1..100) %}
-  <tr>
-    <td >
-      <button onClick="alert({{ i }})">Save Changes</button>
-    </td>
-    <td>
-      <p id="player-{{i}}" contenteditable="true"></p>
-    </td>
-    <td>
-      <p id="suspect-{{i}}" contenteditable="true"></p>
-    </td>
-    <td class="hacker">
-      <select id="hacker-{{i}}" >
-        <option value="">Choose...</option>
-        {% for suspect in site.data.suspects %}
-          {% if suspect.base_character or suspect.edition == edition %}
-            <option value={{suspect.name}}>{{suspect.name}}</option>
-          {% endif %}
-        {% endfor %}
-      </select>
-    </td>
-    
-    <td class="virus">
-      <select id="virus-{{i}}" >
-        <option value="">Choose...</option>
-        {% for weapon in site.data.weapons %}
-            <option value={{weapon.name}}>{{weapon.name}}</option>
-        {% endfor %}
-      </select>
-    </td>
+    {% for i in (1..100) %}
+    <tr>
+      <td >
+        <button onClick="alert({{ i }})">Save Changes</button>
+      </td>
+      <td>
+        <p id="player-{{i}}" contenteditable="true"></p>
+      </td>
+      <td>
+        <p id="suspect-{{i}}" contenteditable="true"></p>
+      </td>
+      <td class="hacker">
+        <select id="hacker-{{i}}" >
+          <option value="">Choose...</option>
+          {% for suspect in site.data.suspects %}
+            {% if suspect.base_character or suspect.edition == edition %}
+              <option value={{suspect.name}}>{{suspect.name}}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </td>
+      
+      <td class="virus">
+        <select id="virus-{{i}}" >
+          <option value="">Choose...</option>
+          {% for weapon in site.data.weapons %}
+              <option value={{weapon.name}}>{{weapon.name}}</option>
+          {% endfor %}
+        </select>
+      </td>
 
 
-    <td class="program">
-      <select id="program-{{i}}" >
-        <option value="">Choose...</option>
-        {% for room in site.data.rooms %}
-          {% if room.base or room.edition == edition %}
-            <option value={{room.name}}>{{room.name}}</option>
+      <td class="program">
+        <select id="program-{{i}}" >
+          <option value="">Choose...</option>
+          {% for room in site.data.rooms %}
+            {% if room.base or room.edition == edition %}
+              <option value={{room.name}}>{{room.name}}</option>
 
-          {% endif %}
-        {% endfor %}
-      </select>
-    </td>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </td>
 
-    <td>
-      <select id="reveal-{{i}}" >
-        <option value="">Choose...</option>
-        <option value="yes"> Yes </option>
-        <option value="no"> No</option>
-      </select>
-    </td>
-  </tr>
+      <td>
+        <select id="reveal-{{i}}" >
+          <option value="">Choose...</option>
+          <option value="yes"> Yes </option>
+          <option value="no"> No</option>
+        </select>
+      </td>
+    </tr>
 
-  {% endfor %}
+    {% endfor %}
   </tbody>
 
 </table>
