@@ -1,9 +1,5 @@
 # Clue Master Edition
 
-{% assign edition = "master" %}
+{% assign edition = "standard" %}
 
-{% include suspects.html %}
-
-{% include weapons.html %}
-
-{% include rooms.html %}
+{% include guesses.html %}
