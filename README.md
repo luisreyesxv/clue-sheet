@@ -11,5 +11,4 @@ Short link: [bit.ly/clue-sheet](https://bit.ly/clue-sheet)
 
 | Edition |
 | ------- |
-| [Clue](https://lowlydba.github.io/clue-sheet/clue) |
-| [Clue Master](https://lowlydba.github.io/clue-sheet/clue-master) |
+| [Clue](https://luisreyesxv.github.io/clue-sheet/clue) |
