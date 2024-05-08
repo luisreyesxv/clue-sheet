@@ -81,6 +81,8 @@
   #guess-table th {
     overflow-wrap: break-word;
     font-size: 4px;
+    height: inherit;
+    width: inherit;
   }
 
   .count {
