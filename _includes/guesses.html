@@ -6,9 +6,9 @@
     <th> Guess </th>
     <th> Player</th>
     <th> Asked whom? </th>
-    <th> Hacker </th>
-    <th> Virus </th>
-    <th> Program </th>
+    <th class="hacker"> Hacker </th>
+    <th class="virus"> Virus </th>
+    <th class= "program"> Program </th>
     <th> Revealed? </th>
   </tr>
   </thead>
@@ -16,14 +16,14 @@
   <tbody>
   {% for i in (1..100) %}
   <tr>
-    <td># {{i}}</td>
+    <td class="count"># {{i}}</td>
     <td>
       <p id="player-{{i}}" contenteditable="true"></p>
     </td>
     <td>
       <p id="suspect-{{i}}" contenteditable="true"></p>
     </td>
-    <td>
+    <td class="hacker">
       <select id="hacker-{{i}}" >
         <option value="">Choose...</option>
         {% for suspect in site.data.suspects %}
@@ -34,7 +34,7 @@
         {% endfor %}
       </select>
     </td>
-    <td>
+    <td class="virus">
       <select id="virus-{{i}}" >
         <option value="">Choose...</option>
         {% for weapon in site.data.weapons %}
@@ -47,7 +47,7 @@
     </td>
 
 
-    <td>
+    <td class="hacker">
       <select id="program-{{i}}" >
         <option value="">Choose...</option>
         {% for room in site.data.rooms %}
@@ -61,7 +61,7 @@
 
     <td>
       <select id="reveal-{{i}}" >
-        <option value="">Choose An Option </option>
+        <option value="">Choose...</option>
         <option value="yes"> Yes </option>
         <option value="no"> No</option>
       </select>
