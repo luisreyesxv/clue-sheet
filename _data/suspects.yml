@@ -1,25 +1,25 @@
-- name: Col. Mustard
+- name: TRANSCODE TALKER
   base_character: true
   emoji: 🟨
 
-- name: Dr. Orchid
+- name: PENTESTAG
   base_character: true
   emoji: 🎴
 
-- name: Prof. Plum
+- name: DECODE TALKER
   base_character: true
   emoji: 🟪
 
-- name: Mr. Green
+- name: LINK SPIDER
   base_character: true
   emoji: 🟩
 
-- name: Mrs. Peacock
+- name: LINKURIBOH
   base_character: true
   emoji: 🦚
 
 - name: Mrs. Scarlet
-  base_character: true
+  base_character: false
   emoji: 🟥
 
 - name: Mme. Rose
