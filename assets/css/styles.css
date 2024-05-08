@@ -23,7 +23,7 @@
   text-decoration: line-through;
 }
 
-#guess-table {
+/* #guess-table {
   font-family: "Pathway Gothic One", sans-serif;
   width: 100%;
   border-collapse: collapse;
@@ -32,14 +32,14 @@
   min-height: 0.01%;
   overflow-x: auto;
   table-layout: fixed;
-}
+} */
 
-#guess-table td,
+/* #guess-table td,
 #guess-table th {
   border: 1px solid black;
   text-align: left;
   padding: 8px;
-}
+} */
 
 .hacker,
 .hacker select {
@@ -62,12 +62,13 @@
   isolation: isolate;
 }
 
-#guess-table td select,
+/* #guess-table td select,
 #guess-table td p {
   height: 100%;
   border-radius: 0;
-}
+} */
 
+/*
 @media (max-width: 767px) {
   #guess-table {
     width: 100%;
@@ -76,7 +77,7 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
   }
-  
+
   #guess-table tr {
     height: 1px;
     width: 1px;
@@ -90,7 +91,62 @@
     width: inherit;
   }
 
-  .count {
-    font-size: 12px !important;
+} */
+
+@media only screen and (max-width: 767px) {
+  /* Force table to not be like tables anymore */
+  #guess-table, 
+  #guess-table thead,
+  #guess-table tbody,
+  #guess-table th,
+  #guess-table td,
+  #guess-table tr {
+    display: block;
   }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #guess-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #guess-table tr {
+    margin: 0 0 1rem;
+    border: 5px solid black;
+  }
+    
+  #guess-table tr::nth-child(odd) {
+    background: #ccc;
+  }
+  
+  #guess-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  #guess-table td::before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+  */
+  #guess-table  td::nth-of-type(1)::before { content: "Guess"; }
+  #guess-table td::nth-of-type(2)::before { content: "Player"; }
+  #guess-table td::nth-of-type(3)::before { content: "Asked Whom?"; }
+  #guess-table td::nth-of-type(4)::before { content: "Hacker"; }
+  #guess-table  td::nth-of-type(5)::before { content: "Virus?"; }
+  #guess-table td::nth-of-type(6)::before { content: "Program"; }
+  #guess-table td::nth-of-type(7)::before { content: "Revealed"; }
 }
