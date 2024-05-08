@@ -23,24 +23,6 @@
   text-decoration: line-through;
 }
 
-/* #guess-table {
-  font-family: "Pathway Gothic One", sans-serif;
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-  font-size: 18px;
-  min-height: 0.01%;
-  overflow-x: auto;
-  table-layout: fixed;
-} */
-
-/* #guess-table td,
-#guess-table th {
-  border: 1px solid black;
-  text-align: left;
-  padding: 8px;
-} */
-
 .hacker,
 .hacker select {
   background-color: blue;
@@ -63,36 +45,10 @@
   width: 100%;
 }
 
-/* #guess-table td select,
-#guess-table td p {
-  height: 100%;
-  border-radius: 0;
-} */
-
-/*
-@media (max-width: 767px) {
-  #guess-table {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
-  }
-
-  #guess-table tr {
-    height: 1px;
-    width: 1px;
-  }
-
-  #guess-table td,
-  #guess-table th {
-    overflow-wrap: break-word;
-    font-size: 4px;
-    height: inherit;
-    width: inherit;
-  }
-
-} */
+#guess-table p{
+  border: 2px solid black;
+  background: white;
+}
 
 @media only screen and (max-width: 767px) {
   /* Force table to not be like tables anymore */
