@@ -38,6 +38,7 @@
       <select id="virus-{{i}}" >
         <option value="">Choose...</option>
         {% for weapon in site.data.weapons %}
+        1
           {% if weapon.base or weapon.edition == edition %}
             <option value={weapon.name}}>{{weapon.name}}</option>
 
