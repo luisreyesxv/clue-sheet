@@ -1,0 +1,14 @@
+<h2>Guess</h2>
+
+<table>
+  <tr>
+    <th> Guess </th>
+    <th> Player</th>
+    <th> Asked whom? </th>
+    <th> Hacker </th>
+    <th> Virus </th>
+    <th> Program </th>
+    <th> Guess </th>
+  </tr>
+
+</table>
