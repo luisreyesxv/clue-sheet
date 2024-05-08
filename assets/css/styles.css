@@ -24,36 +24,36 @@
 }
 
 #guess-table {
-    font-family: 'Pathway Gothic One', sans-serif;
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-    font-size: 18px;
-    min-height: .01%;
-    overflow-x: auto;
+  font-family: "Pathway Gothic One", sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 18px;
+  min-height: 0.01%;
+  overflow-x: auto;
   table-layout: fixed;
 }
 
-
-#guess-table td, #guess-table th {
+#guess-table td,
+#guess-table th {
   border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
 
-.hacker{
-  background-color: white!important;
+.hacker {
+  background-color: blue !important;
   color: white;
 }
-.virus{
+.virus {
   background-color: purple
 }
-.program{
+.program {
   background-color: orange;
 }
 
 @media (max-width: 767px) {
-     #guess-table{
+     #guess-table {
         width: 100%;
         margin-bottom: 15px;
         overflow-y: hidden;
@@ -61,12 +61,13 @@
         border: 1px solid #ddd;
     }
 
-  #guess-table td, #guess-table th {
+  #guess-table td,
+  #guess-table th {
     overflow-wrap: break-word;
     font-size: 4px;
   }
 
-  .count{
+  .count {
     font-size: 10px;
   }
 }
