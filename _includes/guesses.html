@@ -1,7 +1,7 @@
 <h2>Guess</h2>
 
 <table id="guess-table">
-  <thead>
+  {<thead>
   <tr>
     <th> Guess </th>
     <th> Player</th>
@@ -11,12 +11,14 @@
     <th class= "program"> Program </th>
     <th> Revealed? </th>
   </tr>
-  </thead>
+  </thead>}
 
   <tbody>
   {% for i in (1..100) %}
   <tr>
-    <td class="count"># {{i}}</td>
+    <td >
+      <button onClick="alert({{ i }})">Save Changes</button>
+    </td>
     <td>
       <p id="player-{{i}}" contenteditable="true"></p>
     </td>
