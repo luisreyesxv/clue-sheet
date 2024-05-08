@@ -11,9 +11,25 @@
     <th> Guess </th>
   </tr>
 
-  {% for i in (1..20) %}
+  {% for i in (1..100) %}
   <tr>
     <td># {{i}}</td>
+    <td>
+      <p id="player-{{i}}" contenteditable="true"></p>
+    </td>
+    <td>
+      <p id="suspect-{{i}}" contenteditable="true"></p>
+    </td>
+    <td>
+      <select id="hacker-{{i}}" >
+        {% for suspect in site.data.suspects %}
+          {% if suspect.base_character or suspect.edition == edition %}
+            <option value={{suspect.name}}>{{suspect.name}}</option>
+
+          {% endif %}
+        {% endfor %}
+      </select>
+    </td>
   </tr>
 
   {% endfor %}
