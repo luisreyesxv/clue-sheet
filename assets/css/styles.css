@@ -22,3 +22,19 @@
 .x {
   text-decoration: line-through;
 }
+
+#guess-table {
+    font-family: 'Pathway Gothic One', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#guess-table td, #guess-table th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+}
+  
+
