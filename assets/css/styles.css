@@ -48,26 +48,26 @@
   isolation: isolate;
 }
 
-.virus, 
+.virus,
 .virus select {
    background-color: purple;
   isolation: isolate;
 }
 
-.program, 
+.program,
 .program select {
   background-color: orange;
   isolation: isolate;
 }
 
 @media (max-width: 767px) {
-     #guess-table {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #ddd;
-    }
+  #guess-table {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
 
   #guess-table td,
   #guess-table th {
