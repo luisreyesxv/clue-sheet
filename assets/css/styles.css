@@ -41,14 +41,17 @@
   padding: 8px;
 }
 
-.hacker {
-  background-color: blue !important;
+.hacker,
+.hacker select {
+  background-color: blue;
   color: white;
 }
-.virus {
-  background-color: purple
+.virus,
+.virus select {
+   background-color: purple
 }
-.program {
+.program,
+,program select {
   background-color: orange;
 }
 
