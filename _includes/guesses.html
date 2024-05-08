@@ -38,10 +38,7 @@
       <select id="virus-{{i}}" >
         <option value="">Choose...</option>
         {% for weapon in site.data.weapons %}
-          {% if weapon.base %}
             <option value={weapon.name}}>{{weapon.name}}</option>
-
-          {% endif %}
         {% endfor %}
       </select>
     </td>
