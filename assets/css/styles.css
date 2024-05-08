@@ -31,7 +31,10 @@
     font-size: 18px;
     min-height: .01%;
     overflow-x: auto;
+  table-layout: fixed;
 }
+
+
 #guess-table td, #guess-table th {
   border: 1px solid black;
   text-align: left;
@@ -46,6 +49,11 @@
         -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd;
     }
+
+  #guess-table td, #guess-table th {
+  overflow-wrap: break-word;
+  font-size: 4px;
+}
 }
 
   
