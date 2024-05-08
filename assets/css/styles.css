@@ -47,13 +47,15 @@
   color: white;
   isolation: isolate;
 }
-.virus,
+
+.virus, 
 .virus select {
    background-color: purple;
   isolation: isolate;
 }
-.program,
-,program select {
+
+.program, 
+.program select {
   background-color: orange;
   isolation: isolate;
 }
