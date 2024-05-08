@@ -29,11 +29,11 @@
         {% for suspect in site.data.suspects %}
           {% if suspect.base_character or suspect.edition == edition %}
             <option value={{suspect.name}}>{{suspect.name}}</option>
-
           {% endif %}
         {% endfor %}
       </select>
     </td>
+    
     <td class="virus">
       <select id="virus-{{i}}" >
         <option value="">Choose...</option>
