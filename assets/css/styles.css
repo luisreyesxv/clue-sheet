@@ -50,12 +50,14 @@
 
 .virus,
 .virus select {
-   background-color: purple;
+  background-color: purple;
+  color: white;
   isolation: isolate;
 }
 
 .program,
 .program select {
+  color: white;
   background-color: orange;
   isolation: isolate;
 }
@@ -76,6 +78,6 @@
   }
 
   .count {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
