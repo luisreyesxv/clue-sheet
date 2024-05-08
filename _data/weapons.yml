@@ -1,24 +1,24 @@
-- name: Knife
+- name: CYNET REGRESSION
   base: true
   emoji: 🔪
   
-- name: Candlestick
+- name: SHADOW SPELL
   base: true
   emoji: 🕎
 
-- name: Revolver
+- name: CALL OF THE HAUNTED
   base: true
   emoji: 🔫
 
-- name: Rope
+- name: MIRROR FORCE
   base: true
   emoji: ⛓️
 
-- name: Lead Pipe
+- name: BOTTOMLESS TRAP HOLE
   base: true
   emoji: 🦿
 
-- name: Wrench
+- name: COMPULSATORY EVACUATION DEVICE
   base: true
   emoji: 🔧
 
