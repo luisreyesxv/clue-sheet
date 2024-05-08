@@ -10,4 +10,4 @@ Short link: [bit.ly/clue-sheet](https://bit.ly/clue-sheet)
 | Edition |
 | ------- |
 | [Clue sheet](https://luisreyesxv.github.io/clue-sheet/clue) |
-| [Detective Notepad](https://luisreyesxv.github.io/clue-sheet/clue_master) |
+| [Detective Notepad](https://luisreyesxv.github.io/clue-sheet/clue-master) |
