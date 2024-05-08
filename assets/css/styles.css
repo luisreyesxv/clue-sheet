@@ -45,14 +45,17 @@
 .hacker select {
   background-color: blue;
   color: white;
+  isolation: isolate;
 }
 .virus,
 .virus select {
-   background-color: purple
+   background-color: purple;
+  isolation: isolate;
 }
 .program,
 ,program select {
   background-color: orange;
+  isolation: isolate;
 }
 
 @media (max-width: 767px) {
