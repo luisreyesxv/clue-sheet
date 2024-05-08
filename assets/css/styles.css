@@ -73,6 +73,10 @@
     left: -9999px;
   }
 
+  #guess-table tbody tr {
+    display: none;
+  }
+
   #guess-table tr:nth-child(odd) {
     background: #ccc;
   }

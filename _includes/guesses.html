@@ -13,9 +13,9 @@
     </tr>
   </thead>
 
-  <tbody style="display=none;">
+  <tbody>
     {% for i in (1..100) %}
-    <tr>
+    <tr id="history-{{i}}">
       <td >
         <button onClick="alert({{ i }})">Save Changes</button>
       </td>
