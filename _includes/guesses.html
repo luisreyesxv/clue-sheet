@@ -25,7 +25,7 @@
     </td>
     <td>
       <select id="hacker-{{i}}" >
-        <option value="">Choose an Option</option>
+        <option value="">Choose...</option>
         {% for suspect in site.data.suspects %}
           {% if suspect.base_character or suspect.edition == edition %}
             <option value={{suspect.name}}>{{suspect.name}}</option>
@@ -36,7 +36,7 @@
     </td>
     <td>
       <select id="virus-{{i}}" >
-        <option value="">Choose an Option</option>
+        <option value="">Choose...</option>
         {% for weapon in site.data.weapons %}
           {% if weapon.base or weapon.edition == edition %}
             <option value={weapon.name}}>{{weapon.name}}</option>
@@ -49,7 +49,7 @@
 
     <td>
       <select id="program-{{i}}" >
-        <option value="">Choose an Option</option>
+        <option value="">Choose...</option>
         {% for room in site.data.rooms %}
           {% if room.base or room.edition == edition %}
             <option value={{room.name}}>{{toom.name}}</option>
