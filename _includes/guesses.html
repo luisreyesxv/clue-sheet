@@ -1,6 +1,7 @@
 <h2>Guess</h2>
 
 <table id="guess-table">
+  <thead>
   <tr>
     <th> Guess </th>
     <th> Player</th>
@@ -10,7 +11,9 @@
     <th> Program </th>
     <th> Revealed? </th>
   </tr>
+  </thead>
 
+  <tbody>
   {% for i in (1..100) %}
   <tr>
     <td># {{i}}</td>
@@ -66,5 +69,6 @@
   </tr>
 
   {% endfor %}
+  </tbody>
 
 </table>
