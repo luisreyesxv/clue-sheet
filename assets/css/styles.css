@@ -76,6 +76,10 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
   }
+  #guess-table tr{
+    height: 1px;
+    width: 1px;
+  }
 
   #guess-table td,
   #guess-table th {
