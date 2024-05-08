@@ -3,47 +3,47 @@
   base: true
   emoji: 🍽️
 
-- name: Kitchen
+- name: TEXCHANGER
   base: true
   emoji: 🍳
 
-- name: Conservatory
+- name: WIDGET KID
   base: true
   emoji: 🔭
 
-- name: Billiard Room
+- name: LINKSLAYER
   base: true
   emoji: 🎱
 
-- name: Library
+- name: BACKUP SECRETARY
   base: true
   emoji: 📚
 
 # Standard Edition only
-- name: Lounge
+- name: LAUNCHER COMMANDER
   base: false
   edition: standard
   emoji: 🛋️
 
-- name: Hall
+- name: CLIANT
   base: false
   edition: standard
   emoji: 🏛️
 
-- name: Ballroom
+- name: BITROOPER
   base: false
   edition: standard
   emoji: 🕺
 
-- name: Study
+- name: BATTLE FADER
   base: false
   edition: standard
   emoji: 📜
 
 # Master Edition only
-- name: Courtyard
+- name: SWIFT SCARECROW
   base: false
-  edition: master
+  edition: standard
   emoji: 🗿
 
 - name: Gazebo
