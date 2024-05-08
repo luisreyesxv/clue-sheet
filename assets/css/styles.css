@@ -41,6 +41,17 @@
   padding: 8px;
 }
 
+.hacker{
+  background-color: dark blue;
+  color: white;
+}
+.virus{
+  background-color: purple
+}
+.program{
+  background-color: orange;
+}
+
 @media screen and (max-width: 767px) {
      #guess-table{
         width: 100%;
@@ -51,9 +62,13 @@
     }
 
   #guess-table td, #guess-table th {
-  overflow-wrap: break-word;
-  font-size: 4px;
-}
+    overflow-wrap: break-word;
+    font-size: 4px;
+  }
+
+  .count{
+    font-size: 10px;
+  }
 }
 
   
