@@ -40,38 +40,7 @@
   edition: standard
   emoji: 📜
 
-# Master Edition only
 - name: SWIFT SCARECROW
   base: false
   edition: standard
   emoji: 🗿
-
-- name: Gazebo
-  base: false
-  edition: master
-  emoji: 🏯
-
-- name: Drawing Room
-  base: false
-  edition: master
-  emoji: ✏️
-
-- name: Carriage House
-  base: false
-  edition: master
-  emoji: 🐎
-
-- name: Trophy Room
-  base: false
-  edition: master
-  emoji: 🏆
-
-- name: Studio
-  base: false
-  edition: master
-  emoji: 🎨
-
-- name: Fountain
-  base: false
-  edition: master
-  emoji: ⛲

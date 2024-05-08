@@ -21,13 +21,3 @@
 - name: COMPULSATORY EVACUATION DEVICE
   base: true
   emoji: 🔧
-
-- name: Poison
-  base: false
-  edition: master
-  emoji: 🏺
-
-- name: Horseshoe
-  base: false
-  edition: master
-  emoji: 🐴
