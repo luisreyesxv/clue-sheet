@@ -129,11 +129,11 @@ function reset_all_cookies(){
 $(window).on('scroll',myFunction());
 
 function myFunction() {
-  let navbar = document.getElementById("navbar");
-  let sticky = navbar.offsetTop;
-  if (window.pageYOffset >= sticky) {
+  let navbar = $('#navbar')
+  let sticky = navbar.offset().top;
+  if (navbar && window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-  } else {
+  } elseif (navbar) {
     navbar.classList.remove("sticky");
   }
 }
