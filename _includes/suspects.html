@@ -7,8 +7,8 @@
   {% for suspect in site.data.suspects %}
     {% if suspect.base_character or suspect.edition == edition%}
         <tr>
-            <td class="guess-component">{{ suspect.name }}</td>
-            <td><input type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
+            <td id="clue-sheet-{{suspect.name|url_encode}}" class="guess-component">{{ suspect.name }}</td>
+            <td><input id="input-{{suspect.name|url_encode}}" type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
         </tr>
     {% endif %}
   {% endfor %}
