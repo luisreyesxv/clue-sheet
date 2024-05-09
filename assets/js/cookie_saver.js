@@ -130,10 +130,10 @@ $(window).on('scroll',myFunction());
 
 function myFunction() {
   let navbar = $('#navbar')
-  let sticky = navbar.offset().top;
-  if (navbar && window.pageYOffset >= sticky) {
+  let sticky = navbar.offset()?.top;
+  if (navbar && sticky && window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-  } else if (navbar) {
+  } else if (navbar && sticky) {
     navbar.classList.remove("sticky");
   }
 }
