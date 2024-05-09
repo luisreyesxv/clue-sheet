@@ -77,7 +77,3 @@ function getCookie(cname) {
 
 
 $(window).on('load', refresh_history);
-// window.onload = function () {
-//   refresh_history();
-
-// }
