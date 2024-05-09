@@ -7,7 +7,7 @@
   {% for weapon in site.data.weapons %}
     {% if weapon.base or weapon.edition == edition %}
         <tr>
-            <td id="clue-sheet-{{room.name| replace: ' ', '_'}}" class="guess-component">{{ weapon.name }}</td>
+            <td id="clue-sheet-{{weapon.name| replace: ' ', '_'}}" class="guess-component">{{ weapon.name }}</td>
             <td><input id="input-{{weapon.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
         </tr>
     {% endif %}
