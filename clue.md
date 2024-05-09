@@ -2,8 +2,8 @@
 
 {% assign edition = "standard" %}
 
-{% assign spliturl = post.url | split: '/' %}
-{% assign postname = spliturl[4] | replace: '.html', '' %}
+{% set spliturl = post.url | split: '/' %}
+{% set postname = spliturl[4] | replace: '.html', '' %}
 
 {% include nav.html %}
 
