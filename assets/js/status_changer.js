@@ -1,9 +1,9 @@
 function statusButtonChanger (control) {
   const Data = [
-    { status: 'unchecked', value: '\u2B1C' },
-    { status: 'x', value: '\u274c' },
-    { status: 'question', value: '\u2753' },
-    { status: 'checked', value: '\u2705' }
+    { status: 'unchecked', value: '' },
+    { status: 'x', value: 'x' },
+    { status: 'question', value: '?' },
+    { status: 'checked', value: '✓' }
   ]
 
   let index = Data.map(function (e) { return e.value }).indexOf(control.value)
@@ -13,17 +13,12 @@ function statusButtonChanger (control) {
   }
   control.value = Data[index].value
 
-  let results = getCookie('clue_sheet');
-  if(!results){
-    results = {}
-  }
-
   const clue = $(control).closest('td').siblings('.guess-component') // eslint-disable-line no-undef
   let name = clue.text().replace(' ', '_');
 
-  results[name] = Data[index].value;
 
-  setCookie('clue_sheet', results);
+
+  save_sheet_to_cookie(name, Data[index].value)
   switch (Data[index].status) {
     case 'x':
       clue.toggleClass('x').siblings().removeClass('checked')

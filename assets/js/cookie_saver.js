@@ -7,10 +7,10 @@ function refresh_sheet(){
 
   results && Object.keys(results).forEach((clue, index) => {
     switch (results[clue]) {
-      case "\u274c":
+      case "x":
         $('#clue-sheet-' + clue).toggleClass('x').siblings().removeClass('checked');
         break
-      case "\u2705":
+      case "✓":
         $('#clue-sheet-' + clue).toggleClass('checked').siblings().removeClass('x')
         break
       default:
@@ -25,7 +25,7 @@ function refresh_sheet(){
 function save_sheet_to_cookie(id, value){
   let parsed_cookie = getCookie(clue_sheet_cookie);
   let saved_results = {};
-  if(!Array.isArray(parsed_cookie) && parsed_cookie.length){
+  if(!Array.isArray(parsed_cookie) && Object.keys(parsed_cookie).length){
     saved_results = parsed_cookie;
   }
 
