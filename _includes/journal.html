@@ -1,4 +1,5 @@
-<h2>Journal History</h2>
+<h2>Detective Journal</h2>
+
 
 <table id="guess-table">
   <thead>
@@ -14,19 +15,19 @@
   </thead>
 
   <tbody>
-    {% for i in (0..99) %}
-    <tr id="history-{{i}}">
+
+    <tr id="history--1">
       <td >
-        <button onClick="save_history_to_cookie({{ i }})">Save Changes</button>
+        <button onClick="save_history_to_cookie(-1)">Save</button>
       </td>
       <td>
-        <p id="player-{{i}}" contenteditable="true"></p>
+        <p id="player--1" contenteditable="true"></p>
       </td>
       <td>
-        <p id="suspect-{{i}}" contenteditable="true"></p>
+        <p id="suspect--1" contenteditable="true"></p>
       </td>
       <td class="hacker">
-        <select id="hacker-{{i}}" >
+        <select id="hacker--1" >
           <option value="">Choose...</option>
           {% for suspect in site.data.suspects %}
             {% if suspect.base_character or suspect.edition == edition %}
@@ -37,7 +38,7 @@
       </td>
       
       <td class="virus">
-        <select id="virus-{{i}}" >
+        <select id="virus--1" >
           <option value="">Choose...</option>
           {% for weapon in site.data.weapons %}
               <option value={{weapon.name}}>{{weapon.name}}</option>
@@ -47,7 +48,7 @@
 
 
       <td class="program">
-        <select id="program-{{i}}" >
+        <select id="program--1" >
           <option value="">Choose...</option>
           {% for room in site.data.rooms %}
             {% if room.base or room.edition == edition %}
@@ -59,7 +60,7 @@
       </td>
 
       <td>
-        <select id="reveal-{{i}}" >
+        <select id="reveal--1" >
           <option value="">Choose...</option>
           <option value="yes"> Yes </option>
           <option value="no"> No</option>
@@ -67,7 +68,6 @@
       </td>
     </tr>
 
-    {% endfor %}
   </tbody>
 
 </table>
