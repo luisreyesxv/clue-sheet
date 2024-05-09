@@ -5,9 +5,12 @@
   <li><a href="#about" onClick="reset_all_cookies" >Reset all</a></li>
 </ul> -->
 
+{% assign spliturl = post.url | split: '/' %}
+{% assign postname = spliturl[4] | replace: '.html', '' %}
+
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="javascript:void(0)">News</a>
   <a href="javascript:void(0)">Contact</a>
-  <a href="#about" onClick="reset_all_cookies" >Reset all</a>
+  <a href="/{{postname}}" onClick="reset_all_cookies" >{{postname}}</a>
 </div>
