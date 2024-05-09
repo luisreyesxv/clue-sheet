@@ -128,10 +128,9 @@ function reset_all_cookies(){
 
 $(window).on('scroll',myFunction());
 
-let navbar = document.getElementById("navbar");
-let sticky = navbar.offsetTop;
-
 function myFunction() {
+  let navbar = document.getElementById("navbar");
+  let sticky = navbar.offsetTop;
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
@@ -143,5 +142,4 @@ function myFunction() {
 $(window).on('load', ()=> {
   refresh_history();
   refresh_sheet();
-  
 });
