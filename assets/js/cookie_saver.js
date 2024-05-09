@@ -1,6 +1,6 @@
 function refresh_sheet(){
 
-  let results = getCookie('clue_sheet');
+  let results = getCookie('clue_sheet1');
 
   results && Object.keys(results).forEach((clue, index) => {
     switch (results[clue]) {
@@ -126,20 +126,21 @@ function reset_all_cookies(){
 }
 
 
-$(window).on('scroll',myFunction());
+$(window).on('scroll',myFunction);
 
 function myFunction() {
-  let navbar = $('#navbar')
+  let navbar = $('#navbar');
   let sticky = navbar.offset()?.top;
   if (navbar && sticky && window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.first().addClass("sticky");
   } else if (navbar && sticky) {
-    navbar.classList.remove("sticky");
+    navbar.first().removeClass("sticky");
   }
 }
 
 
-$(window).on('load', ()=> {
+// $(window).on('load', ()=> {
+  $( document ).ready(()=>{
   refresh_history();
   refresh_sheet();
 });

@@ -181,7 +181,7 @@
 @media only screen and (max-width: 767px) {
 
   #navbar {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100%;
   }
@@ -194,7 +194,7 @@
   background-color: #333;
 }
 
-#navbar a {
+#navbar a, #navbar button {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -204,12 +204,12 @@
   font-size: 17px;
 }
 
-#navbar a:hover {
+#navbar a:hover, #navbar button:hover {
   background-color: #ddd;
   color: black;
 }
 
-#navbar a.active {
+#navbar a.active, #navbar button.active{
   background-color: #04AA6D;
   color: white;
 }
@@ -226,4 +226,17 @@
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+#navbar button{
+  
+  background-color: transparent;
+  box-shadow: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  color:  white;
+
 }
