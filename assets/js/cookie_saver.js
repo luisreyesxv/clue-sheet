@@ -122,6 +122,21 @@ function getCookie(cname) {
 function reset_all_cookies(){
   setCookie('clue_sheet', 1, -1);
   setCookie('history_table', 1, -1);
+  location.reload();
+}
+
+
+$(window).on('scroll',myFunction());
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
 
 
