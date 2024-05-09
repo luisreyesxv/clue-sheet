@@ -128,8 +128,8 @@ function reset_all_cookies(){
 
 $(window).on('scroll',myFunction());
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
