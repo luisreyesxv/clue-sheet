@@ -1,6 +1,9 @@
+const clue_sheet_cookie = 'clue_sheet1';
+const journal_cookie = 'history_table';
+
 function refresh_sheet(){
 
-  let results = getCookie('clue_sheet1');
+  let results = getCookie(clue_sheet_cookie);
 
   results && Object.keys(results).forEach((clue, index) => {
     switch (results[clue]) {
@@ -20,7 +23,7 @@ function refresh_sheet(){
 }
 
 function save_sheet_to_cookie(id, value){
-  let parsed_cookie = getCookie('clue_sheet');
+  let parsed_cookie = getCookie(clue_sheet_cookie);
   let saved_results = {};
   if(!Array.isArray(parsed_cookie) && parsed_cookie.length){
     saved_results = parsed_cookie;
@@ -30,13 +33,13 @@ function save_sheet_to_cookie(id, value){
 
   saved_results[name] = value;
 
-  setCookie('clue_sheet',saved_results);
+  setCookie(clue_sheet_cookie,saved_results);
 }
 
 
 function refresh_history(index){
 
-  let results = getCookie('history_table') || [];
+  let results = getCookie(journal_cookie) || [];
 
   if(index < 0 ){
     $('#player--1').text('');
@@ -62,7 +65,7 @@ function refresh_history(index){
 }
 
 function save_history_to_cookie(index = -1){
-  let parsed_cookie = getCookie('history_table');
+  let parsed_cookie = getCookie(journal_cookie);
   let saved_results = [];
   if(parsed_cookie.length){
     saved_results = parsed_cookie;
@@ -73,7 +76,7 @@ function save_history_to_cookie(index = -1){
     saved_results[index] = prepare_history_cookie_values(index)
   }
 
-  setCookie('history_table', saved_results);
+  setCookie(journal_cookie, saved_results);
   refresh_history(index);
 
 }
@@ -120,8 +123,8 @@ function getCookie(cname) {
 }
 
 function reset_all_cookies(){
-  setCookie('clue_sheet', 1, -1);
-  setCookie('history_table', 1, -1);
+  setCookie(clue_sheet_cookie, 1, -1);
+  setCookie(journal_cookie, 1, -1);
   location.reload();
 }
 
