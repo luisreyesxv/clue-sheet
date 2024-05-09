@@ -12,7 +12,18 @@ function statusButtonChanger (control) {
     index = 0
   }
   control.value = Data[index].value
+
+  let results = getCookie('clue_sheet');
+  if(!results){
+    results = {}
+  }
+
   const clue = $(control).closest('td').siblings('.guess-component') // eslint-disable-line no-undef
+  let name = clue.text().replace(' ', '_');
+
+  results[name] = Data[index].value;
+
+  setCookie('clue_sheet', results);
   switch (Data[index].status) {
     case 'x':
       clue.toggleClass('x').siblings().removeClass('checked')

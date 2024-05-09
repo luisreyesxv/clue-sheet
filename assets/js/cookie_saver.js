@@ -5,16 +5,16 @@ function refresh_sheet(){
   results && Object.keys(results).forEach((clue, index) => {
     switch (results[clue]) {
       case "\u274c":
-        $('#clue-sheet-' + results[clue]).toggleClass('x').siblings().removeClass('checked');
+        $('#clue-sheet-' + clue).toggleClass('x').siblings().removeClass('checked');
         break
       case "\u2705":
-        $('#clue-sheet-' + results[clue]).toggleClass('checked').siblings().removeClass('x')
+        $('#clue-sheet-' + clue).toggleClass('checked').siblings().removeClass('x')
         break
       default:
-        $('#clue-sheet-' + results[clue]).removeClass('x checked')
+        $('#clue-sheet-' + clue).removeClass('x checked')
     }
     
-    $('#input-'+ results[clue]).val().change();
+    $('#input-'+ clue).val(results[clue]).change();
    
   })
 }
@@ -26,7 +26,9 @@ function save_sheet_to_cookie(id, value){
     saved_results = parsed_cookie;
   }
 
-  saved_results[id] = value;
+  let name = id.replace(' ', '_');
+
+  saved_results[name] = value;
 
   setCookie('clue_sheet',saved_results);
 }
