@@ -14,10 +14,10 @@
   </thead>
 
   <tbody>
-    {% for i in (1..100) %}
+    {% for i in (0..99) %}
     <tr id="history-{{i}}">
       <td >
-        <button onClick="alert({{ i }})">Save Changes</button>
+        <button onClick="save_history_to_cookie({{ i }})">Save Changes</button>
       </td>
       <td>
         <p id="player-{{i}}" contenteditable="true"></p>
