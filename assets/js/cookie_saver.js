@@ -3,7 +3,6 @@ function refresh_history(){
   let results = getCookie('history_table') || [];
 
   results.forEach((value,i)=>{
-    console.log(i,value)
 
     $('#player-'+ i).text(results[i].player);
     $('#suspect-'+ i).text(results[i].suspect);
@@ -31,6 +30,7 @@ function save_history_to_cookie(index = -1){
   }
 
   setCookie('history_table', saved_results);
+  refresh_history();
 
 }
 
