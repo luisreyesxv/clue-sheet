@@ -10,5 +10,5 @@
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="/clue-sheet/clue">Clue Sheet</a>
   <a href="/clue-sheet/clue-master">Detective Journal</a>
-  <a href="/clue-sheet/{{page.path|remove '.md'}}" onClick="reset_all_cookies" >{{page.path|remove '.md'}}</a>
+  <a href="/clue-sheet/{{page.path | remove_first: '.md'}}" onClick="reset_all_cookies" >{{page.path | remove_first: '.md'}}</a>
 </div>
