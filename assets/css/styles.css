@@ -178,3 +178,23 @@
   #journal-table td:nth-of-type(6)::before { content: "Program"; }
   #journal-table td:nth-of-type(7)::before { content: "Revealed"; }
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
