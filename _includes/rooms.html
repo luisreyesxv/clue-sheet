@@ -7,7 +7,7 @@
   {% for room in site.data.rooms %}
     {% if room.base or room.edition == edition %}
         <tr>
-            <td id="clue-sheet-"{{"link slayer"}}|url_encode class="guess-component">{{ room.name }}</td>
+            <td id="clue-sheet-{{'link slayer'|url_encode}}" class="guess-component">{{ room.name }}</td>
             <td><input id='input-{{room.name}}' type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
         </tr>
     {% endif %}

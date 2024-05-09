@@ -50,6 +50,10 @@
   background: white;
 }
 
+#guess-table tbody tr {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   /* Force table to not be like tables anymore */
   #guess-table,
@@ -73,9 +77,6 @@
     left: -9999px;
   }
 
-  #guess-table tbody tr {
-    display: none;
-  }
 
   #guess-table tr:nth-child(odd) {
     background: #ccc;

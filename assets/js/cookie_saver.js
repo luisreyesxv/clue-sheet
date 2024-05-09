@@ -1,6 +1,14 @@
-function refresh_history(){
+function refresh_history(index){
 
   let results = getCookie('history_table') || [];
+
+  if(index < 0 ){
+    $('#player--1').text('');
+    $('#suspect--1').text('');
+    $('#hacker--1').val('').change();
+    $('#virus--1').val('').change();
+    $('#program--1').val('').change();
+  }
 
   results.forEach((value,i)=>{
 
@@ -30,7 +38,7 @@ function save_history_to_cookie(index = -1){
   }
 
   setCookie('history_table', saved_results);
-  refresh_history();
+  refresh_history(index);
 
 }
 
