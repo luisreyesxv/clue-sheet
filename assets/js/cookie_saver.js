@@ -133,7 +133,7 @@ function myFunction() {
   let sticky = navbar.offset().top;
   if (navbar && window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-  } elseif (navbar) {
+  } else if (navbar) {
     navbar.classList.remove("sticky");
   }
 }
