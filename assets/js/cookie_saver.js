@@ -1,3 +1,37 @@
+function refresh_sheet(){
+
+  let results = getCookie('clue_sheet');
+
+  results && Object.keys(results).forEach((clue, index) => {
+    switch (results[clue]) {
+      case "\u274c":
+        $('#clue-sheet-' + results[clue]).toggleClass('x').siblings().removeClass('checked');
+        break
+      case "\u2705":
+        $('#clue-sheet-' + results[clue]).toggleClass('checked').siblings().removeClass('x')
+        break
+      default:
+        $('#clue-sheet-' + results[clue]).removeClass('x checked')
+    }
+    
+    $('#input-'+ results[clue]).val().change();
+   
+  })
+}
+
+function save_sheet_to_cookie(id, value){
+  let parsed_cookie = getCookie('clue_sheet');
+  let saved_results = {};
+  if(!Array.isArray(parsed_cookie) && parsed_cookie.length){
+    saved_results = parsed_cookie;
+  }
+
+  saved_results[id] = value;
+
+  setCookie('clue_sheet',saved_results);
+}
+
+
 function refresh_history(index){
 
   let results = getCookie('history_table') || [];
@@ -84,4 +118,8 @@ function getCookie(cname) {
 }
 
 
-$(window).on('load', refresh_history);
+$(window).on('load', ()=> {
+  refresh_history();
+  refresh_sheet();
+  
+});
