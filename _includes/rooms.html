@@ -6,9 +6,9 @@
     </tr>
   {% for room in site.data.rooms %}
     {% if room.base or room.edition == edition %}
-        <tr>
+        <tr id="sheet-row-{{room.name| replace: ' ', '_'}}">
             <td id="clue-sheet-{{room.name| replace: ' ', '_'}}" class="guess-component">{{ room.name }}</td>
-            <td><input id="input-{{room.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
+            <td><input id="input-{{room.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="" /></td>
         </tr>
     {% endif %}
   {% endfor %}

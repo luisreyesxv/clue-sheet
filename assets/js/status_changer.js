@@ -14,7 +14,7 @@ function statusButtonChanger (control) {
   control.value = Data[index].value
 
   const clue = $(control).closest('td').siblings('.guess-component') // eslint-disable-line no-undef
-  let name = clue.text().replace(' ', '_');
+  let name = clue.text().replaceAll(' ', '_');
   $("#sheet-row-" + name).attr('class', Data[index].status);
 
 

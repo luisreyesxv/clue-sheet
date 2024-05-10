@@ -6,9 +6,9 @@
     </tr>
   {% for weapon in site.data.weapons %}
     {% if weapon.base or weapon.edition == edition %}
-        <tr>
+        <tr  id="sheet-row-{{weapon.name| replace: ' ', '_'}}"  >
             <td id="clue-sheet-{{weapon.name| replace: ' ', '_'}}" class="guess-component">{{ weapon.name }}</td>
-            <td><input id="input-{{weapon.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
+            <td><input id="input-{{weapon.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="" /></td>
         </tr>
     {% endif %}
   {% endfor %}
