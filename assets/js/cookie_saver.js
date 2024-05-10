@@ -10,7 +10,7 @@ function refresh_sheet(){
       case "x":
         $('#clue-sheet-' + clue).toggleClass('x').siblings().removeClass('checked');
         break
-      case "✓":
+      case "!":
         $('#clue-sheet-' + clue).toggleClass('checked').siblings().removeClass('x')
         break
       default:

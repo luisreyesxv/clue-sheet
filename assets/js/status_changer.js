@@ -3,7 +3,7 @@ function statusButtonChanger (control) {
     { status: 'unchecked', value: '' },
     { status: 'x', value: 'x' },
     { status: 'question', value: '?' },
-    { status: 'checked', value: '✓' }
+    { status: 'checked', value: '!' }
   ]
 
   let index = Data.map(function (e) { return e.value }).indexOf(control.value)
