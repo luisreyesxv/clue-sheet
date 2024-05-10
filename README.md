@@ -7,7 +7,8 @@ Short link: [bit.ly/clue-sheet](https://bit.ly/clue-sheet)
 
 ## Editions
 
-| Edition |
+| Pages |
 | ------- |
 | [Clue sheet](https://luisreyesxv.github.io/clue-sheet/clue) |
-| [Detective Journal](https://luisreyesxv.github.io/clue-sheet/clue-master) |
+| [Detective Journal](https://luisreyesxv.github.io/clue-sheet/detective-journal) |
+| [The Rules](https://luisreyesxv.github.io/clue-sheet/rules) |

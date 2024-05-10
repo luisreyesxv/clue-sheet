@@ -37,7 +37,7 @@ function save_sheet_to_cookie(id, value){
     saved_results = parsed_cookie;
   }
 
-  let name = id.replace(' ', '_');
+  let name = id.replaceAll(' ', '_');
 
   saved_results[name] = value;
 
