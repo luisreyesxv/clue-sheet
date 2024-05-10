@@ -19,6 +19,9 @@ function refresh_sheet(){
       case "?":
         class_name = 'question';
         break;
+      case "me":
+        class_name = 'me';
+        break;
       default:
         class_name = 'unchecked';
         $('#clue-sheet-' + clue).removeClass('x checked')

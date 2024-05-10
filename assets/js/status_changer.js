@@ -2,6 +2,7 @@ function statusButtonChanger (control) {
   const Data = [
     { status: 'unchecked', value: '' },
     { status: 'x', value: 'x' },
+    { status: 'me', value: 'me' },
     { status: 'question', value: '?' },
     { status: 'checked', value: '!' }
   ]
