@@ -15,7 +15,7 @@ function statusButtonChanger (control) {
 
   const clue = $(control).closest('td').siblings('.guess-component') // eslint-disable-line no-undef
   let name = clue.text().replace(' ', '_');
-
+  $("#sheet-row-" + name).attr('class', Data[index].status);
 
 
   save_sheet_to_cookie(name, Data[index].value)

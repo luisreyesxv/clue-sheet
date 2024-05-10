@@ -6,7 +6,7 @@
     </tr>
   {% for suspect in site.data.suspects %}
     {% if suspect.base_character or suspect.edition == edition%}
-        <tr>
+        <tr id="sheet-row-{{suspect.name| replace: ' ', '_'}}">
             <td id="clue-sheet-{{suspect.name| replace: ' ', '_'}}" class="guess-component">{{ suspect.name }}</td>
             <td><input id="input-{{suspect.name| replace: ' ', '_'}}" type="button" class="multi-checkbox" value="" /></td>
         </tr>
