@@ -31,17 +31,20 @@
 
 ## Set UP
 
-1) Pick 2 packs and shuffle them together. This is your library for the game.
+1. Pick 2 packs and shuffle them together. This is your library for the game.
 
-2) Take the 21 Evidence cards and separate them into 3 piles:
+2. Take the 21 Evidence cards and separate them into 3 piles:
     - Hackers (blue cards)
     - Virus (purple cards)
     - Programs (orange cards)
 
-3) Shuffle each pile and place them face down. Pick the top card from each of the 3 piles and place them into the **Case File Envelope** so no one (including you) can see whats inside
-4) Reveal the top 2 cards from the **Program** pile and reveal them. This is public information for the game. (Players should mark these cards down)
-5) Shuffle the remaining **Hacker**, **virus**, and **Program** cards into one pile and deal them face down to each player. Each player should keep these cards hidden from the other players
-6) Hand out a notepad to everyone so they can record evidence and narrow down what the cards must be in the **Case File Envelope**
+3. Shuffle each pile and place them face down. Pick the top card from each of the 3 piles and place them into the **Case File Envelope** so no one (including you) can see whats inside
+
+4. Reveal the top 2 cards from the **Program** pile and reveal them. This is public information for the game. (Players should mark these cards down)
+
+5. Shuffle the remaining **Hacker**, **virus**, and **Program** cards into one pile and deal them face down to each player. Each player should keep these cards hidden from the other players
+
+6. Hand out a notepad to everyone so they can record evidence and narrow down what the cards must be in the **Case File Envelope**
 
 
 
