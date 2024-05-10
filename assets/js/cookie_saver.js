@@ -129,18 +129,6 @@ function reset_all_cookies(){
 }
 
 
-$(window).on('scroll',myFunction);
-
-function myFunction() {
-  let navbar = $('#navbar');
-  let sticky = navbar.offset()?.top;
-  if (navbar && sticky && window.pageYOffset >= sticky) {
-    navbar.first().addClass("sticky");
-  } else if (navbar && sticky) {
-    navbar.first().removeClass("sticky");
-  }
-}
-
 
 // $(window).on('load', ()=> {
   $( document ).ready(()=>{
