@@ -71,7 +71,13 @@ function save_history_to_cookie(index = -1){
     saved_results = parsed_cookie;
   }
   if(index < 0){
-    saved_results.push(prepare_history_cookie_values(-1));
+    let temp = prepare_history_cookie_values(-1);
+    if(true){
+      saved_results.push(temp);
+    } else {
+      return;
+    }
+    
   } else {
     saved_results[index] = prepare_history_cookie_values(index)
   }
