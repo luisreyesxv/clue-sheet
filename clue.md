@@ -1,12 +1,8 @@
-# Clue Standard Edition
+{% include nav.html %}
+# Clue Sheet
 
 {% assign edition = "standard" %}
 
-
-
-{{page.path}}
-
-{% include nav.html %}
 
 {% include suspects.html %}
 
