@@ -17,18 +17,18 @@
 /* Text changes depending on button status */
 .checked {
   font-weight: bold;
-  background: green;
+  background-color: green!important;
 }
 
 .x {
   text-decoration: line-through;
-  background: red;
+  background-color: red !important;
 }
 
 
 
 .question{
-  background: yellow;
+  background-color: yellow!important;
 }
 
 .hacker,
