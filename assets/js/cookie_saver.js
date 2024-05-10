@@ -6,21 +6,29 @@ function refresh_sheet(){
   let results = getCookie(clue_sheet_cookie);
 
   results && Object.keys(results).forEach((clue, index) => {
+    let class_name = 'unchecked';
     switch (results[clue]) {
       case "x":
+        class_name = 'x';
         $('#clue-sheet-' + clue).toggleClass('x').siblings().removeClass('checked');
         break
       case "!":
+        class_name= 'checked';
         $('#clue-sheet-' + clue).toggleClass('checked').siblings().removeClass('x')
         break
+      case "?":
+        class_name = 'question';
+        break;
       default:
+        class_name = 'unchecked';
         $('#clue-sheet-' + clue).removeClass('x checked')
+        
     }
-    
+    $('#sheet-row-' + clue).attr('class', class_name);
     $('#input-'+ clue).val(results[clue]).change();
-   
   })
 }
+
 
 function save_sheet_to_cookie(id, value){
   let parsed_cookie = getCookie(clue_sheet_cookie);
@@ -72,7 +80,7 @@ function save_history_to_cookie(index = -1){
   }
   if(index < 0){
     let temp = prepare_history_cookie_values(-1);
-    if(true){
+    if(Object.values(temp).join('')){
       saved_results.push(temp);
     } else {
       return;
@@ -85,7 +93,7 @@ function save_history_to_cookie(index = -1){
   setCookie(journal_cookie, saved_results);
   refresh_history(index);
 
-}
+} 
 
 function prepare_history_cookie_values (key){
   let answer = {};
