@@ -4,7 +4,11 @@
 {% assign edition = "standard" %}
 
 
-<div> 30 </div>
+<div id = 'counter'> 30 </div>
+
+<button onClick='save_life_to_cookie("gain")'> gain life </button>
+<input id ='life-change' type='tel'/> 
+<button onClick='save_life_to_cookie("lose")'> lose life </button>
 
 
 ---
