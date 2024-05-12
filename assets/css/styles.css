@@ -67,7 +67,7 @@
   background: white;
 }
 
-#guess-table tbody tr {
+#guess-table tbody tr, #life-history-table tbody tr {
   display: none;
 }
 
