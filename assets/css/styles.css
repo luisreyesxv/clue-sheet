@@ -271,3 +271,43 @@
 h1:nth-of-type(1){
   display: none;
 }
+
+#counter, #life-controls{
+  display: flex; 
+  align-items: center; 
+  justify-content: center
+}
+
+#life-change{
+  width: 40%;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 5vh;
+}
+
+#counter{
+  font-size: 20vh;
+  margin-bottom: 20px;
+}
+
+.gain{
+  background-color: green!important;
+  color: white;
+}
+
+.lose{
+  background-color: red!important;
+  color: white;
+}
+
+#counter .gain, #counter .lose{
+  transition: background-color 1s linear;
+}
+
+#life-controls{
+  height: 10vh;
+}
+
+#life-controls button, #life-controls input{
+  height: 100%;
+}

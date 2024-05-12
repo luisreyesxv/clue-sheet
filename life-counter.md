@@ -5,10 +5,11 @@
 
 
 <div id = 'counter'> 30 </div>
-
-<button onClick='save_life_to_cookie("gain")'> gain life </button>
-<input id ='life-change' type='tel'/> 
-<button onClick='save_life_to_cookie("lose")'> lose life </button>
+<div id= 'life-controls'>
+    <button onClick='save_life_to_cookie("gain")'> Gain (+) </button>
+    <input id ='life-change' type='tel' placeholder='insert here'/> 
+    <button onClick='save_life_to_cookie("lose")'> Lose (-)</button>
+</div>
 
 
 ---

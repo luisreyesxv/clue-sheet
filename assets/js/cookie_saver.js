@@ -82,6 +82,13 @@ function save_life_to_cookie(status = 'lose'){
     saved_results.history.length = 10;
   }
 
+  $('#counter').attr('class',status)
+
+  if(status === 'gain'){
+    setTimeout(()=> $('#counter').removeClass('gain'),1500);
+  } else { setTimeout(()=> $('#counter').removeClass('lose'),1500);}
+
+
 
   setCookie(life_cookie,saved_results);
   refresh_life();
@@ -107,9 +114,13 @@ function refresh_life(){
     let amount = results.history[i].amount;
 
     if(amount > 0){
-      amount = "-"+amount
+      amount = "-"+amount;
+      $('#life-history-'+ i).attr('class', 'lose');
+
     } else { 
       amount = '+' + (amount *-1);
+      $('#life-history-'+ i).attr('class', 'gain');
+      
 
     }
     $('#life-history-date-'+ i).text(date);
