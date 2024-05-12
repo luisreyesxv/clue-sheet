@@ -68,8 +68,8 @@ This is a normal game of MTG with the additional rules:
 
 - Think you know wohdunnit? At the beginning of your end step, After any **Suggestions** have been made, you can make an **Accusation** to solve the case. Say *"I'm accusing the <span style="background: blue; color: white">*HACKER*</span> group of hacking <span style="background: orange; color: white"> *PROGRAM*</span> with the <span style="background: purple; color: white">*VIRUS*</span> virus!!"* . Then check the **Case File Envelope** without letting other players see the **Evidence Cards** inside. **YOU CAN MAKE ONLY ONE ACCUSATION PER GAME, SO BE CAREFUL**
 
-- If you named all three **Evidence Cards** inside the 88Case File Envelope** correctly, reveal them. **You win the game!**
+- If you named all three **Evidence Cards** inside the **Case File Envelope** correctly, reveal them. **You win the game!**
 
 - If your **Accusation** was wrong, put the cards back in the envelope while keepign them hidden from the other players. You can't make **Suggestions** or **Accusations** for the rest of the game, **but you must still respond to any from other players.
 
-**Even though you can't solve the muder, you can still win the game by reducing the life totals of the other players to 0!**
+**Even though you can't solve the murder, you can still win the game by reducing the life totals of the other players to 0!**

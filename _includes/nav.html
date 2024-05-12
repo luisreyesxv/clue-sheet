@@ -4,11 +4,24 @@
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about" onClick="reset_all_cookies" >Reset all</a></li>
 </ul> -->
-
+<!-- {% assign url = page.path | remove_first: '.md' %} -->
 
 <div id="navbar">
-  <a href="/clue-sheet/clue">Sheet</a>
-  <a href="/clue-sheet/detective-journal">Journal</a>
-  <a href="/clue-sheet/rules">Rules</a>
-  <button onClick="reset_all_cookies()" >Reset History</button>
+
+  {% unless page.path  == 'clue.md' %}
+    <a href="/clue-sheet/clue">Sheet</a>
+  {% endunless %}
+  {% unless page.path  == 'detective-journal.md' %}
+    <a href="/clue-sheet/detective-journal">Journal</a>
+  {% endunless %}
+  {% unless page.path == 'rules.md' %}
+    <a href="/clue-sheet/rules">Rules</a>
+  {% endunless %}
+  {% unless page.path  == 'life-counter.md' %}
+    <a id='life'  href="/clue-sheet/life-counter">HP: <span id ='nav-life'>30</span> </a>
+  {% endunless %}
+  
+
+
+  <button onClick="reset_all_cookies()" >Total Reset</button>
 </div>

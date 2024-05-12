@@ -254,6 +254,20 @@
 
 }
 
+#life{
+  
+  box-shadow: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  color:  white;
+  background-color: green;
+  font-weight: bolder;
+
+}
+
 h1:nth-of-type(1){
   display: none;
 }
