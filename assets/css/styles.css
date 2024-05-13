@@ -311,3 +311,7 @@ h1:nth-of-type(1){
 #life-controls button, #life-controls input{
   height: 100%;
 }
+
+.footer{
+  display: none;
+}
